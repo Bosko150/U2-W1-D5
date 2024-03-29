@@ -16,11 +16,26 @@ header {
   z-index: 10;
   transition: background-color 0.7s ease;
 }
+@media screen and (max-width: 700px) {
+  li:nth-child(1) {
+    display: none;
+  }
+  li:nth-child(2) {
+    display: none;
+  }
+  li:nth-child(3) {
+    display: none;
+  }
+}
 #headerContent {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  #headerContent {
+  }
 }
 #getstarted {
   background-color: #191919;
