@@ -9855,7 +9855,6 @@
 
       window.addEventListener("scroll", function (event) {
         let s = this.window.scrollY;
-        console.log(s);
         if (s >= 390) {
           nav.style.background = "white";
           btn.style.background = "#1a8917";
@@ -9869,7 +9868,6 @@
       let g_array = svg.children[1].children[0].children;
       let disp = [];
       console.log(g_array);
-
       for (let i = 0; i < g_array.length / 2; i++) {
         disp[i] = 2 * i + 1; //indici dispari di g2
       }

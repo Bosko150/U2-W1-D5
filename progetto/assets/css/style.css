@@ -17,13 +17,7 @@ header {
   transition: background-color 0.7s ease;
 }
 @media screen and (max-width: 700px) {
-  li:nth-child(1) {
-    display: none;
-  }
-  li:nth-child(2) {
-    display: none;
-  }
-  li:nth-child(3) {
+  li {
     display: none;
   }
 }
@@ -35,6 +29,10 @@ header {
 }
 @media screen and (max-width: 700px) {
   #headerContent {
+    width: 90%;
+  }
+  #emme {
+    display: none;
   }
 }
 #getstarted {
@@ -85,6 +83,7 @@ main {
   flex-direction: column;
   gap: 50px;
 }
+
 h1 {
   font-family: "Specter", serif;
   font-size: 6rem;
@@ -92,9 +91,10 @@ h1 {
   font-weight: 500;
   letter-spacing: -3px;
 }
+
 #titlebox h2 {
   font-size: 1.6rem;
-  width: 70%;
+  width: 50%;
   font-family: "Roboto";
 }
 #startreading {
@@ -105,6 +105,35 @@ h1 {
   border-radius: 30px;
   font-size: 1.5rem;
   width: 250px;
+}
+@media screen and (max-width: 700px) {
+  #titlebox {
+    width: 90%;
+    gap: 0px;
+    padding-block: 40px;
+    display: flex;
+  }
+  #yellowbox {
+    padding: 0;
+  }
+  h1 {
+    width: 100%;
+    font-size: 4.3rem;
+    line-height: 60px;
+    padding-bottom: 25px;
+  }
+  #titlebox h2 {
+    font-size: 1.4rem;
+    width: 80%;
+    padding-bottom: 25px;
+  }
+  #startreading {
+    font-size: 1rem;
+    width: 200px;
+  }
+  #getstarted {
+    margin-left: 20px;
+  }
 }
 #maintrending {
   width: 100%;
@@ -175,6 +204,42 @@ h1 {
 .articledetails span {
   color: gray;
 }
+@media screen and (max-width: 700px) {
+  #trendingbox {
+    width: 90%;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #trendingarticles {
+    width: 100%;
+    flex-direction: column;
+  }
+  .articlebox {
+    display: flex;
+    width: auto;
+    margin-bottom: 0px;
+  }
+  #maintrending {
+    padding: 0px;
+  }
+  .article h3 {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .articledetails span {
+    font-size: 0.6rem;
+  }
+  .articlenum {
+    font-size: 1.5rem;
+  }
+  #trendingmessage {
+    font-size: 0.8rem;
+  }
+  .author h4 {
+    font-size: 0.7rem;
+  }
+}
 #maincontent {
   width: 100%;
   display: flex;
@@ -210,6 +275,7 @@ h1 {
   border-radius: 5px;
 }
 .articletext {
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -238,6 +304,9 @@ h1 {
   border-radius: 10px;
   padding: 5px;
   font-weight: 300;
+}
+.articleimg {
+  width: 40%;
 }
 .articleimg img {
   height: 150px;
@@ -283,4 +352,62 @@ h1 {
   position: sticky;
   top: 100px;
   right: 0;
+}
+@media screen and (max-width: 700px) {
+  #maincontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #maincolumn {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 60px;
+    padding-inline: 0px;
+    justify-content: center;
+  }
+  #articolumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .articleM {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .authorM img {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+  }
+  .articletext h3 {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .articletext p {
+    display: none;
+  }
+  .authorM h4 {
+    font-size: 0.7rem;
+  }
+  .articledetailsM span {
+    font-size: 0.6rem;
+  }
+  .selectedcat h6 {
+    font-size: 0.6rem;
+  }
+  .articleimg img {
+    height: 100px;
+  }
+  #discovcolumn {
+    width: 100%;
+    height: 350px;
+    position: relative;
+  }
 }
